@@ -1,0 +1,112 @@
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-content-grid {
+    grid-template-columns: 1fr; /* Stack columns on tablets */
+    gap: 40px;
+  }
+  .about-image {
+    order: -1; /* Move image above the text on tablets and mobile */
+  }
+  .section-title {
+    text-align: center; /* Center title when stacked */
+  }
+  .contact-grid {
+    grid-template-columns: 1fr; /* Stack columns on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title,
+  .about-snippet-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-nav.active {
+    transform: translateX(0);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .main-nav a {
+    font-size: 1.5rem;
+  }
+
+  .product-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  .mobile-menu-toggle {
+    display: block;
+  }
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav.active {
+    transform: translateX(0);
+  }
+  .main-nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .page-header-section h1,
+  .about-cta-section h2 {
+    font-size: 2.5rem;
+  }
+  .page-header-section h1 {
+    font-size: 2.5rem;
+  }
+  .contact-form-container,
+  .contact-details-container {
+    padding: 30px;
+  }
+}

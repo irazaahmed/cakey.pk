@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story - Cakey.pk</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Shared Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo_cakey.png" />
+</head>
+<body>
+<div class="loader-wrapper" id="loader-wrapper">
+    <div class="loader-cupcake"></div>
+</div>
+
+    <!-- HEADER  -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo_cakey.png" alt="logo" width="40" height="60" />
+            </a>
+            <nav class="main-nav" id="main-nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Our Products</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- --- Page Title Section --- -->
+        <section class="page-header-section">
+            <div class="container">
+                <h1>Our Story</h1>
+            </div>
+        </section>
+
+        <!-- --- Our Story Content Section --- -->
+        <section class="about-story-section">
+            <div class="container">
+                <div class="about-content-grid">
+                    <div class="about-text">
+                        <h2 class="section-title">How It All Began</h2>
+                        <p>
+                            Welcome to our kitchen! My name is Ahmed Raza, and Cakey.pk started from a simple passion: baking for the people I love. For years, my oven was always warm, baking birthday cakes for my family members and cookies for friends. My greatest joy was seeing the smiles on their faces after the first bite.
+                        </p>
+                        <p>
+                            Friends and family started insisting that I share my creations with more people, and that's how Cakey.pk was born. It's more than just a business; it's an extension of my home. Yahan, har order ko aisi ehtiyat aur safai se banaya jaata hai jaise main apne ghar walon ke liye bana rahi hoon. We use only the finest ingredients—real butter, pure chocolate, and fresh cream—because you deserve the best.
+                        </p>
+                        <p>
+                            Our promise is simple: to deliver a cake that is not only beautiful but also incredibly delicious. Kyunke hum maante hain ke <strong>"Har bite mein ghar ka pyar"</strong> hona chahiye. Thank you for letting us be a part of your celebrations.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/img/Front Grey Kurta.png" alt="A baker decorating a cake with love">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- --- Call to Action Section --- -->
+        <section class="about-cta-section">
+            <div class="container">
+                <h2>Ready for a Sweet Treat?</h2>
+                <p>Explore our menu of delicious, homemade cakes and cupcakes made fresh just for you.</p>
+                <a href="products.html" class="btn">View Our Products</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER  -->
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <h3>Cakey.pk</h3>
+          <p>"Har bite mein ghar ka pyar."</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/irazaahmed" aria-label="Facebook" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/irazaahmed" aria-label="Instagram" target="_blank"   
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://github.com/irazaahmed" aria-label="GitHub" target="_blank"   
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/irazaahmed" aria-label="LinkedIn" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://wa.me/923130221118" aria-label="WhatsApp" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Cakey.pk. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS & SCRIPT -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/923130221118" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="scroll-top-btn" id="scrollTop-btn" aria-label="Go to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Combined JavaScript for Menu, Scroll, and Loader -->
+<script>
+    // --- Pre-loader Logic ---
+    window.onload = function() {
+        const loaderWrapper = document.getElementById('loader-wrapper');
+        // Add 'hidden' class to start the fade-out animation
+        loaderWrapper.classList.add('hidden');
+    };
+
+    // --- Mobile Menu Toggle ---
+    const menuToggle = document.getElementById("mobile-menu-toggle");
+    const mainNav = document.getElementById("main-nav-menu");
+    menuToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("active");
+        const icon = menuToggle.querySelector("i");
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+
+    // --- Go To Top Button Logic ---
+    const scrollTopBtn = document.getElementById("scrollTop-btn");
+    if (scrollTopBtn) { // Check if the button exists on the page
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+        scrollTopBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+</script>
+</body>
+</html>
